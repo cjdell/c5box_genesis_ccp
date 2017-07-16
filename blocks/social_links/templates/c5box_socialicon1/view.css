@@ -1,0 +1,9 @@
+.sociallink1 ul.list-inline li a{
+	width: auto !important;
+	border-radius: 3px !important;
+	border-width: 6px !important;
+	font-weight: bold;
+	padding: 4px 15px !important;
+	display: inline !important;
+	text-transform: capitalize !important;
+}

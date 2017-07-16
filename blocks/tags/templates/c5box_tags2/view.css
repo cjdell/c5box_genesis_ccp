@@ -1,0 +1,73 @@
+
+.c5box_ticket {
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 5px 5px 0;
+    padding: 7px 3px;
+    position: relative !important;
+}
+.c5box_ticket::after {
+    border-bottom: 7px solid #fff;
+    border-radius: 0 0 20px;
+    border-right: 7px solid #fff;
+    content: "";
+    left: 0;
+    position: absolute !important;
+    top: 0;
+    z-index: 100;
+}
+.c5box_ticket::before {
+    border-bottom: 7px solid #fff;
+    border-left: 7px solid #fff;
+    border-radius: 0 0 0 20px;
+    content: "";
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+.c5box_ticket a {
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    
+    outline: 1px dashed rgba(255, 255, 255, 0.4);
+    padding: 4px 15px 4px 25px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.c5box_ticket a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+.c5box_ticket a::after {
+    border-radius: 0 20px 0 0;
+    border-right: 7px solid #fff;
+    border-top: 7px solid #fff;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute !important;
+    z-index: 100;
+}
+.c5box_ticket a::before {
+    border-left: 7px solid #fff;
+    border-radius: 20px 0 0;
+    border-top: 7px solid #fff;
+    bottom: 0;
+    content: "";
+    position: absolute !important;
+    right: 0;
+    z-index: 1000;
+}
+.c5box_ticket .circle {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3);
+    height: 0;
+    left: 10px;
+    margin-top: -5px;
+    position: absolute !important;
+    top: 50%;
+    width: 0;
+    z-index: 100;
+}

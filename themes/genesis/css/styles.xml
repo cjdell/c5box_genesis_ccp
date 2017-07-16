@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+    <set name="Available Fonts - Ignore options">
+        <style name="Font1" variable="font1" type="type" />
+        <style name="Font2" variable="font2" type="type" />
+        <style name="Font3" variable="font3" type="type" />
+        <style name="Font4" variable="font4" type="type" />
+        <style name="Font5" variable="font5" type="type" />
+        <style name="Font6" variable="font6" type="type" />
+        <style name="Font7" variable="font7" type="type" />
+        <style name="Font8" variable="font8" type="type" />
+        <style name="Font9" variable="font9" type="type" />
+        <style name="Font10" variable="font10" type="type" />
+        <style name="Font11" variable="font11" type="type" />
+        <style name="Font12" variable="font12" type="type" />
+        <style name="Font13" variable="font13" type="type" />
+        <style name="Font14" variable="font14" type="type" />
+        <style name="Font15" variable="font15" type="type" />
+        <style name="Font16" variable="font16" type="type" />
+        <style name="Font17" variable="font16" type="type" />
+        <style name="Font17" variable="font16" type="type" />
+        <style name="Font18" variable="font16" type="type" />
+    </set>
+    <set name="Full Page">
+        <style name="Page Background" variable="page-background" type="color" />
+        <style name="Text" variable="body" type="type" />
+        <style name="Link" variable="body-link" type="color" />
+        <style name="Link Hover" variable="body-link-hover" type="color" />
+        <style name="Header Bottom Border" variable="header-bottom" type="color" />
+    </set>
+    <set name="Home Page">
+        <style name="Intro Area" variable="home-introbox" type="color" />
+        <style name="Main" variable="home-section" type="color" />
+        <style name="Parallax Area" variable="parallax-section1" type="color" />
+        <style name="Parallax Area Text" variable="parallax-section1text" type="color" />
+        <style name="Parallax Area 2" variable="parallax-section2" type="color" />
+        <style name="Parallax Area 2 Text" variable="parallax-section2text" type="color" />
+        <style name="Marquee Area" variable="marqueearea-background" type="color" />
+        <style name="Home Section 1 BG" variable="home-section1" type="color" />
+        <style name="Home Section 1 Text" variable="home-section1text" type="color" />
+        <style name="Home Section 1 Text Shadow" variable="home-section1textshadow" type="color" />
+        <style name="Home Section 2 BG" variable="home-section2" type="color" />
+        <style name="Home Section 2 Text" variable="home-section2text" type="color" />
+        <style name="Home Section 2 Text Shadow" variable="home-section2textshadow" type="color" />
+    </set>
+    <set name="Inner Page">
+        <style name="Section" variable="inner-section" type="color" />
+    </set>
+    <set name="Top Head">
+        <style name="Background" variable="th-background" type="color" />
+        <style name="Font" variable="th-font" type="type" />
+        <style name="Link Color" variable="th-link" type="color" />
+        <style name="Link Hover Color" variable="th-link-hover" type="color" />
+    </set>
+    <set name="Header">
+        <style name="Background" variable="header-background" type="color" />
+        <style name="Site Title" variable="header-site-title" type="type" />
+        <style name="Navigation" variable="header-navigation" type="type" />
+        <style name="Navigation Selected/Hover" variable="header-navigation-hover" type="color" />
+        <style name="Navigation Submenu BG" variable="header-navigation-menu-border" type="color" />
+        <style name="Mobile Button Lines" variable="mobile-lines" type="color" />
+        <style name="Mobile Button BG" variable="mobile-bg" type="color" />
+        <style name="Mobile Button Hover BG" variable="mobile-hover" type="color" />
+        <style name="Navigation shadow" variable="navshadow" type="color" />
+    </set>
+    <set name="Inner Page Title">
+        <style name="Page Title" variable="page-title" type="type" />
+        <style name="Page Title shadow" variable="page-title-shadow" type="color" />
+    </set>
+    <set name="Search Header">
+        <style name="Form Wrapper" variable="form-wrap" type="color" />
+        <style name="Button Idle" variable="button-idle" type="color" />
+        <style name="Button Hover" variable="button-active" type="color" />
+        <style name="Button Font Color" variable="button-font" type="color" />
+    </set>
+    <set name="Banner / Slider">
+        <style name="Background" variable="banner-background" type="color" />
+        <style name="Heading" variable="bannerhead" type="type" />
+        <style name="Description" variable="bandesc" type="type" />
+        <style name="Scroller" variable="scroller" type="type" />
+    </set>
+    <set name="Headings">
+        <style name="Heading 1" variable="h1" type="type" />
+        <style name="Heading 2" variable="h2" type="type" />
+        <style name="Heading 3" variable="h3" type="type" />
+        <style name="Heading 4" variable="h4" type="type" />
+        <style name="Heading 5" variable="h5" type="type" />
+        <style name="Heading 6" variable="h6" type="type" />
+        <style name="Paragraph" variable="paragraph" type="color" />
+    </set>
+    <set name="Body">
+        <style name="Body Autonav Text" variable="body-autonav-text" type="color" />
+        <style name="Body Autonav Border" variable="body-autonav-border" type="color" />
+        <style name="Body Autonav Hover Text" variable="body-autonav-hovtx" type="color" />
+        <style name="Body Autonav Hover BG" variable="body-autonav-hovbg" type="color" />
+    </set>
+    <set name="Footer">
+        <style name="Top Background Color" variable="footer-top-background" type="color" />
+        <style name="Bottom Background Color" variable="footer-bottom-background" type="color" />
+       <style name="Top Footer Text" variable="footer-top" type="color" />
+       <style name="Bottom Footer Text" variable="footer-bottom" type="color" />
+       <style name="Footer Autonav Text" variable="footer-autonav-text" type="color" />
+        <style name="Footer Autonav Border" variable="footer-autonav-border" type="color" />
+        <style name="Footer Autonav Hover Text" variable="footer-autonav-hovtx" type="color" />
+        <style name="Footer Autonav Hover BG" variable="footer-autonav-hovbg" type="color" />
+        <style name="Bottom Footer Autonav Text" variable="footmenu" type="color" />
+    </set>
+    <set name="Pagelist">
+        <style name="Pagelist Border" variable="pagelist-border" type="color" />
+    </set>
+    <set name="Blog">
+        <style name="Blog Author Color" variable="brimtitle-author" type="color" />
+        <style name="Blog Date Color" variable="brimtitle-date" type="color" />
+        <style name="Blog Page Title" variable="brimtitle-title" type="color" />
+        <style name="Blog Share Icons" variable="brimshare" type="color" />
+    </set>
+    <set name="Social Links">
+        <style name="Social Icon" variable="socialicon" type="color" />
+        <style name="Social Icon Hover" variable="socialicon-hover" type="color" />
+    </set>
+    <set name="Parallax Block">
+        <style name="Parallax Content" variable="parallaxcontent" type="color" />
+        <style name="Parallax Text Shadow" variable="parallaxcontentshadow" type="color" />
+    </set>
+    <set name="Feature Block">
+        <style name="Feature Block Icon" variable="featureicon" type="color" />
+        <style name="Feature Block Border" variable="featureborder" type="color" />
+        <style name="Feature Block Header" variable="featureheader" type="type" />
+        <style name="Feature Block content" variable="featurecontent" type="color" />
+        <style name="Feature Block Background" variable="featurebackground" type="color" />
+        <style name="Feature Background Hover" variable="featurebackgroundhover" type="color" />
+    </set>
+    <set name="Buttons">
+        <style name="Submit Button BG" variable="submit-bg" type="color" />
+        <style name="Submit Button Txt" variable="submit-tx" type="color" />
+        <style name="Submit Button Border" variable="submit-bor" type="color" />
+        <style name="Button Background" variable="btn-bg" type="color" />
+        <style name="Button Border" variable="btn-border" type="color" />
+        <style name="Button Text" variable="btn-tx" type="type" />
+    </set>
+    <set name="Tags Block">
+        <style name="Background" variable="tagbg" type="color" />
+        <style name="Text" variable="tagtext" type="color" />
+        <style name="Background Hover" variable="tagbgh" type="color" />
+        <style name="Text Hover" variable="tagtexth" type="color" />
+    </set>
+    <set name="Miscellaneous">
+        <style name="List Icon Color" variable="list-icon" type="color" />
+    </set>
+</styles>

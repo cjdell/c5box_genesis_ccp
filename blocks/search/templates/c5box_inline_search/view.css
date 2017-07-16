@@ -1,0 +1,17 @@
+.inlinesearchblock{
+    margin: 17px 10px;
+    text-align: right;
+}
+.inlinesearchblock .ccm-search-block-text{
+    border-radius: 999px;
+    padding-left:15px !important;
+    padding-right: 15px !important; 
+}
+.inlinesearchblock .ccm-search-block-submit{
+    border-radius:999px !important;
+}
+.searchinlinetitle{
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 5px;
+}

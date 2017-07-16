@@ -1,0 +1,184 @@
+
+.transition(@element, @duration: 1s, @ease: ease, @delay: 0s){
+    -webkit-transition: @element @duration @ease @delay;
+    transition: @element @duration @ease @delay;
+}
+.animate(@name, @duration : 1s, @ease: linear, @delay: 0, @count: 1, @fill: none){
+    animation: @name @duration @ease @delay @count @fill;
+    -webkit-animation: @name @duration @ease @delay @count @fill;
+}
+.transform(@action){
+    -ms-transform: @action;
+    -webkit-transform: @action;
+    transform: @action;
+}
+.generatelist(@n, @i: 1) when (@i =< @n) {
+    &.dlist-animate:nth-child(@{i}){
+        @suffix: "s";
+        @num: @i * 0.08;
+        @com: ~"@{num}@{suffix}";
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0vh);
+        transition: all 0.4s cubic-bezier(0.645,  0.045, 0.355, 1.000);
+        transition-delay: @com;
+    }
+    .generatelist(@n, (@i + 1));
+}
+.keyframe(@name, @attr, @from, @to){
+    @property: @attr;
+    @-webkit-keyframes @name{
+        from {
+            @{property}: @from;
+        }
+        to {
+            @{property}: @to;
+        }
+    }
+    @keyframes @name{
+        from {
+            @{property}: @from;
+        }
+        to {
+            @{property}: @to;
+        }
+    }
+}
+.keyframe2(@name, @attr, @0, @50, @100){
+    @property: @attr;
+    @-webkit-keyframes @name{
+        0%      {@{property}: @0;}
+        50%     {@{property}: @50;}
+        100%    {@{property}: @100;}
+    }
+    @keyframes @name{
+        0%      {@{property}: @0;}
+        50%     {@{property}: @50;}
+        100%    {@{property}: @100;}
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform:translate(0,10px)}
+    to   { opacity: 1; transform:translate(0,0) }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; transform:translate(0,10px) }
+    to   { opacity: 1; transform:translate(0,0) }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; transform:translate(0,10px) }
+    to   { opacity: 1; transform:translate(0,0) }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; transform:translate(0,10px) }
+    to   { opacity: 1; transform:translate(0,0) }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; transform:translate(0,10px) }
+    to   { opacity: 1; transform:translate(0,0) }
+}
+
+
+.heading(@heading){
+    @color: "@{heading}-type-color";
+    @size: "@{heading}-type-font-size";
+    @font: "@{heading}-type-font-family";
+    @weight: "@{heading}-type-font-weight";
+    @{heading}{
+        color: @@color;
+        font-size: @@size;
+        font-family: @@font;
+        font-weight: @@weight;
+        margin: 20px 0px;
+    }
+}
+.box() {
+    padding: 0px 30px;
+    border: 1px solid @bordercolor;
+    margin-bottom: 15px;
+}
+
+.cta(@color: #fff, @bg: #ffae21, @size: 15px, @pad: 10px 30px){
+    color: @color;
+    background: @bg;
+    text-transform: uppercase;
+    padding:@pad;
+    display: inline-block;
+    border: 0px;
+    border-radius: 0px;
+    font-size: @size;
+    vertical-align: middle;
+    text-decoration: none;
+    margin: 10px;
+    .transition(background-color, 0.3s);
+    .invert(){
+        @color:#000;
+        @bg:#fff;
+        color: @color;
+        background: @bg;
+        &:hover{
+            background: darken(@bg, 20%);
+        }
+    }
+    &:hover{
+        background: darken(@bg, 10%);
+    }
+}
+.border(@border:#af7105){
+    border: 2px solid @border;
+}
+
+
+.bradius(@top-left:0px, @top-right:0px, @bottom-right:0px, @bottom-left:0px){
+    -webkit-border-top-left-radius: @top-left;
+    -webkit-border-top-right-radius: @top-right;
+    -webkit-border-bottom-right-radius: @bottom-right;
+    -webkit-border-bottom-left-radius: @bottom-left;
+    -moz-border-radius-topleft: @top-left;
+    -moz-border-radius-topright: @top-right;
+    -moz-border-radius-bottomright: @bottom-right;
+    -moz-border-radius-bottomleft: @bottom-left;
+    border-top-left-radius: @top-left;
+    border-top-right-radius: @top-right;
+    border-bottom-right-radius: @bottom-right;
+    border-bottom-left-radius: @bottom-left;
+}
+.liststyle(@content:"\f206", @size:13px){
+    list-style: none;
+    padding:0 0 20px 15px;
+    margin:0;
+    li {
+        padding-left: 20px;
+        position:relative;
+        line-height: inherit;
+    }
+    li:before {
+        position:absolute;
+        font-family: FontAwesome;
+        top:3px;
+        left:0px;
+        content: @content;
+    }
+}
+.spanstyle(@content:"\f206", @size:13px){
+    padding-left: 20px;
+    position:relative;
+    line-height: inherit;
+    display: inline-block;
+    &:before {
+        position:absolute;
+        font-family: FontAwesome;
+        top:3px;
+        left:0px;
+        content: @content;
+    }
+}

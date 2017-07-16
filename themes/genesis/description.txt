@@ -1,0 +1,2 @@
+Genesis Theme
+A multipurpose concrete5 theme. It's mobile responsive and is suitable for any type of website. Extensive customization options make this theme ideal for beginners and advance users. Taking advantage of Concrete5's technology to bring users the best development experience. Fully compatible with the latest version of concrete5.

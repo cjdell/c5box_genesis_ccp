@@ -1,0 +1,84 @@
+ul {
+    list-style: none;
+}
+
+ul {
+    padding: 0px 0px 15px 15px;
+    margin: 0px;
+    &.list-arrow {
+        .liststyle("\f105");
+    }
+    &.list-round {
+        .liststyle("\f10c");
+    }
+    &.list-check {
+        .liststyle("\f00c");
+    }
+    &.list-cross {
+        .liststyle("\f00d");
+    }
+    &.list-cog {
+        .liststyle("\f013");
+    }
+    &.list-checksquare {
+        .liststyle("\f14a");
+    }
+    &.list-checksquare-o {
+        .liststyle("\f046");
+    }
+    &.list-circle {
+        .liststyle("\f111");
+    }
+    &.list-plussquare {
+        .liststyle("\f0fe");
+    }
+    &.list-squareo {
+        .liststyle("\f096");
+    }
+    li{
+        span{
+            &.list-arrow {
+                .spanstyle("\f105");
+            }
+            &.list-round {
+                .spanstyle("\f10c");
+            }
+            &.list-check {
+                .spanstyle("\f00c");
+            }
+            &.list-cross {
+                .spanstyle("\f00d");
+            }
+            &.list-cog {
+                .spanstyle("\f013");
+            }
+            &.list-checksquare {
+                .spanstyle("\f14a");
+            }
+            &.list-checksquare-o {
+                .spanstyle("\f046");
+            }
+            &.list-circle {
+                .spanstyle("\f111");
+            }
+            &.list-plussquare {
+                .spanstyle("\f0fe");
+            }
+            &.list-squareo {
+                .spanstyle("\f096");
+            }
+        }
+    }
+}
+
+ul li:before, span:before {
+    /* customize_list-icon */
+    color: @list-icon-color;
+    /* customize_list-icon */
+}
+span.alert{
+    display: block;
+    a{
+        font-weight: bold;
+    }
+}

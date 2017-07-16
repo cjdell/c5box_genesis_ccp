@@ -1,0 +1,8 @@
+.stickymain .faq-entry-content > h3:first-child{
+    margin-top: -100px;
+    padding-top: 120px;
+}
+.stickymain .faq-entry-content{
+	border-bottom: 1px solid;
+	margin-bottom: 20px;
+}

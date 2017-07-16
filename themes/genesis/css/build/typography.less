@@ -1,0 +1,102 @@
+@import "mixins.less";
+body .master-container {
+    font-family: @body-type-font-family;
+    font-size: @body-type-font-size;
+    color: @body-type-color;
+    font-weight: @body-type-font-weight;
+}
+.font1{font-family: @font1-type-font-family}
+.font2{font-family: @font2-type-font-family}
+.font3{font-family: @font3-type-font-family}
+.master-container {
+    h1, h2, h3, h4, h5, p {
+        margin: @margin-heading;
+        line-height: 130%;
+        color: @defaultcolor;
+    }
+    h1 {
+        font-size: @h1-type-font-size;
+        font-family: @h1-type-font-family;
+        font-weight: @h1-type-font-weight;
+        color: @h1-type-color;
+        line-height: 110%;
+    }
+    h2 {
+        font-size: @h2-type-font-size;
+        font-family: @h2-type-font-family;
+        font-weight: @h2-type-font-weight;
+        color: @h2-type-color;
+    }
+    h3 {
+        font-size: @h3-type-font-size;
+        font-family: @h3-type-font-family;
+        font-weight: @h3-type-font-weight;
+        color: @h3-type-color;
+    }
+    h4 {
+        font-size: @h4-type-font-size;
+        font-family: @h4-type-font-family;
+        font-weight: @h4-type-font-weight;
+        color: @h4-type-color;
+    }
+    h5 {
+        font-size: @h5-type-font-size;
+        font-family: @h5-type-font-family;
+        font-weight: @h5-type-font-weight;
+        color: @h5-type-color;
+        margin-top: -15px;
+        margin-bottom: 30px;
+    }
+    h6 {
+        font-size: @h6-type-font-size;
+        font-family: @h6-type-font-family;
+        font-weight: @h6-type-font-weight;
+        color: @h6-type-color;
+    }
+    p {
+        text-shadow: 0px 0px 0px;
+        line-height: 180%;
+        /* customize_p-default */
+        
+        color: @paragraph-color;
+        /* customize_p-default */
+    }
+    .xl {
+        font-size: 80px;
+    }
+    #footer, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer p, #footer a {
+        /* customize_footer-color */  
+        color: @footer-top-color;
+        /* customize_footer-color */
+    }
+    #footmenu, #footmenu h1, #footmenu h2, #footmenu h3, #footmenu h4, #footmenu h5, #footmenu p, #footmenu a {
+        /* customize_footermenu-color */  
+        color: @footer-bottom-color;
+        /* customize_footermenu-color */
+    }
+    #footer a i {
+        font-size: 25px;
+    }
+    blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #95a5a6;
+        margin: 1.5em 10px;
+        padding: 1.5em 15px;
+        quotes: "\201C""\201D""\2018""\2019";
+        &.blockquote-reverse {
+            border-left: 0px;
+            border-right: 10px solid #95a5a6;
+        }
+    }
+    blockquote:before {
+        color: #95a5a6;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+    blockquote p {
+        display: inline;
+    }
+}

@@ -1,0 +1,276 @@
+html,body,div,span,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,samp,
+small,strike,strong,sub,sup,tt,var,
+b,i,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+section, article, aside, footer, header, hgroup, nav{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+body{
+  line-height:1;
+}
+ol,ul{
+  list-style:none;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+  content:'';
+  content:none;
+}
+
+ins{
+  text-decoration:none;
+}
+del{
+  text-decoration:line-through;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+.c5box_animateslider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible
+}
+
+.c5box_animateslider .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5000
+}
+
+.c5box_animateslider .active-slide {
+    z-index: 9999
+}
+
+.c5box_animateslider .fs_obj {
+    display: block;
+    display: none;
+    position: relative;
+    top: 0 !important;
+    left: 100%;
+    z-index: 7000
+}
+
+.c5box_animateslider .fs_fixed_obj {
+    z-index: 6000;
+    left: 0
+}
+
+.c5box_animateslider .fs_obj * {
+    display: inline-block;
+    position: relative;
+    top: 0 !important;
+    left: 0
+}
+
+
+
+.c5box_animateslider .next,
+.c5box_animateslider .prev {
+    position: absolute;
+    font-size: 20px;
+    z-index: 9999;
+
+    color: #fff !important;
+    opacity: 0.5;
+}
+
+.c5box_animateslider .prev {
+    left: 0px;
+    margin-left: -30px;
+    top: 48%;
+    
+}
+.c5box_animateslider .prev:after {
+  content: "\f053"; 
+  font-family: FontAwesome;
+}
+.c5box_animateslider .next {
+    right: 0px;
+    margin-right: -30px;
+    top: 48%;
+}
+.c5box_animateslider .next:after {
+  content: "\f054"; 
+  font-family: FontAwesome;
+}
+
+.c5box_animateslider .next:hover, .c5box_animateslider .prev:hover{
+  color: #fff;
+  opacity: 1;
+}
+
+.c5box_animateslider:hover .next,
+.c5box_animateslider:hover .prev {
+    display: block;
+
+}
+
+.fs-pager-wrapper {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 9999
+}
+
+.fs-custom-pager-wrapper a,
+.fs-pager-wrapper a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 5px 0 0;
+    background: url(images/fs.pager.png) 0 -14px no-repeat
+}
+
+.fs-custom-pager-wrapper .active,
+.fs-pager-wrapper .active {
+    background: url(images/fs.pager.png) no-repeat
+}
+.c5box_animateslider .slide h1,
+.c5box_animateslider .slide h2,
+.c5box_animateslider .slide h3,
+.c5box_animateslider .slide h4,
+.c5box_animateslider .slide h5,
+.c5box_animateslider .slide p{
+	line-height: 100%;
+}
+.slide_image_box{
+	width: 100%;
+    text-align: center;
+}
+.slide_heading_box,
+.slide_desc_box{
+	text-align: left;
+	width: 100%;
+    text-align: center;
+}
+.c5box_animateslider .slide .slide_image_box{
+    opacity: 1 !important;
+    margin-bottom: 25px;
+}
+.c5box_animateslider .slide .slide_image_box img{
+    transform: translateY(-10vh);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.89, 0.05, 0.09, 0.99) 0s;
+    height: auto !important;
+}
+.c5box_animateslider .slide .slide_image_box.fs_obj_active  img{
+    opacity: 1;
+    transform: translateY(0vh) !important;
+    transition: all 0.8s;
+}
+
+.c5box_animateslider .slide .slide_desc_box > h1{
+    transform: translateY(10vh);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.89, 0.05, 0.09, 0.99) 0s;
+}
+.c5box_animateslider .slide .slide_desc_box.fs_obj_active > h1{
+    opacity: 1;
+    transform: translateY(0vh) !important;
+    transition: all 0.8s;
+}
+
+.c5box_animateslider .slide .slide_desc_box > p{
+    transform: translateY(10vh);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.89, 0.05, 0.09, 0.99) 0s;
+    line-height: 160% !important;
+}
+.c5box_animateslider .slide .slide_desc_box.fs_obj_active > p{
+    opacity: 1;
+    transform: translateY(0vh) !important;
+    transition: all 0.8s;
+    transition-delay: 0.3s;
+}
+.c5box_animateslider .slide .slide_desc_box > a.btn.btn-default{
+    display: inline-block;
+    transform: translateY(10vh);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.89, 0.05, 0.09, 0.99) 0s;
+    padding: 15px 30px;
+}
+.c5box_animateslider .slide .slide_desc_box.fs_obj_active > a.btn.btn-default{
+    opacity: 1;
+    transform: translateY(0vh) !important;
+    transition: all 0.8s;
+    transition-delay: 0.6s;
+}
+.responisve-container{
+    height: 600px;
+    position: relative;
+}
+.fs_loader {
+          width: 50px;
+          height: 40px;
+          margin-top: -20px;
+          margin-left: -25px;
+          text-align: center;
+          font-size: 10px;
+          position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .fs_loader > div {
+          background-color: #fff;
+          height: 100%;
+          width: 6px;
+          display: inline-block;
+          -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+          animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        }
+
+        .fs_loader .rect2 {
+          -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+        }
+
+        .fs_loader .rect3 {
+          -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+        }
+
+        .fs_loader .rect4 {
+          -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+        }
+
+        .fs_loader .rect5 {
+          -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+        }
+
+        @-webkit-keyframes sk-stretchdelay {
+          0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+          20% { -webkit-transform: scaleY(1.0) }
+        }
+
+        @keyframes sk-stretchdelay {
+          0%, 40%, 100% { 
+            transform: scaleY(0.4);
+            -webkit-transform: scaleY(0.4);
+          }  20% { 
+            transform: scaleY(1.0);
+            -webkit-transform: scaleY(1.0);
+          }
+        }

@@ -1,0 +1,200 @@
+.master-container {
+    #header {
+        >.container{
+            @media @lt1200{
+            width: auto;
+            }
+            .flexposition{
+
+                display: flex;
+                flex-wrap:nowrap;
+                justify-content:space-between;
+                align-items: center;
+                    #logo, #navpos, #socialicons{
+                        width: auto;
+                    }
+                    #logo{
+                        flex-grow:2;
+                    }
+                    #navpos{
+                        flex-grow:1;
+                    }
+                    #socialicons{
+                        flex-grow:2;
+                    }
+                }
+
+            @media @lt991{
+                .flexposition{
+                    position: relative;
+                    #logo{
+                        order:1;
+                    }
+                    #navpos{
+                        bottom: 0;
+                        height: 54px;
+                        margin-top: -27px;
+                        order: 3;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        width: 100%;
+                    }
+                    #socialicons{
+                        order:2;
+                        margin-right: 90px;
+                        position: relative;
+                        z-index: 5;
+                        .ccm-block-social-links{
+                            text-align: right;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+        transition: all 0.5s;
+        margin-top: -1px;
+        &.solidify {
+            background-color: fadein(@header-background-color, 100%);
+            .opennav {
+            }
+        }
+        @media @lt767{
+            background-color: fadein(@header-background-color, 100%);
+        }
+        border-bottom: 0px;
+        .nav {
+            a {
+                border: 0px !important;
+            }
+        }
+        .tophead{
+            background: @th-background-color;
+            @media @lt767{
+                text-align: center;
+                .container{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+            >.container{
+                @media @lt1200{
+                    width: auto;
+                }
+            }
+        }
+        > .container{
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+    }
+    padding-top: 0px;
+    #banner {
+        min-height: auto;
+        height: 100vh;
+        width: 100%;
+        display: table;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 0px;
+
+
+        /* fix iOS bug not displaying 100vh correctly */
+        /* ipad */
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+                height: 768px;
+        }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+                height: 1024px;
+        }
+        /* iphone5 */
+        @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+                height: 320px;
+        }
+        @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+                height: 568px;
+        }
+        /* iPhone 4 */
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+                height: 320px;
+        }
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+                height: 480px;
+        }
+
+
+        .bancontcenter {
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            z-index: 499;
+            padding: 80px 0px 50px;
+            @media @lt767{
+                .slider-wrapper{
+                    width: 450px;
+                    margin: auto;
+                }
+
+            }
+            @media @lt480{
+              .slider-wrapper{
+                    width: 300px;
+                    margin: auto;
+                }  
+            }
+        }
+    }
+    .navcontrol{
+        display: flex;
+        justify-content: flex-end;
+        .searchboxcontainer{ /*SEARCH BOX*/
+            width: 50px;
+            padding: 27px 35px 31px;
+            font-size: 20px;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            display: none;
+            @media @lt767{
+                width: auto;
+                margin-left: -115px;
+                padding: 2px 0 0 20px;
+                position: absolute;
+                z-index: 100;
+            }
+        }
+    }
+    .shrink{
+        .navcontrol{
+            .searchboxcontainer{
+                padding: 15px 30px 14px;
+                @media @lt767{
+                    padding: 2px 0 0 20px;
+                }
+            }
+        }
+    }
+    .searchbody{
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.innerpage {
+    #header{
+        background-color: fadein(@header-background-color, 100%);
+    }
+    #banner {
+        height: 300px;
+        .bancontcenter {
+            padding-top: 100px;
+        }
+    }
+    .scroller{
+        display: none;
+
+    }
+}

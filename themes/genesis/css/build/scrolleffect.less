@@ -1,0 +1,51 @@
+@import "animation.less";
+@import "mixins.less";
+.master-container {
+    .scrolleffect .pagelistwrapper{
+        .pagelistcont{
+            h3{
+                a.img-bgcover{
+                    transform: translateX(20vh);
+                    opacity: 0;
+                    transition: all 0.4s cubic-bezier(0.645,  0.045, 0.355, 1.000);
+
+                }
+                a.img-bgcover.show{
+                    opacity: 1;
+                    transform: translateX(0vh) !important;
+                    .transition(all, 0.5s);
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+                
+            }
+        }
+    }
+    .scrolleffect{
+        .ca-menu{
+            transform: translateY(20vh);
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.645,  0.045, 0.355, 1.000);
+        }
+        .ca-menu.show{
+            transform: translateY(0vh);
+            opacity: 1;
+        }
+    }
+    .scrolleffect-delay{
+        .ca-menu{
+            transform: translateY(20vh);
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.645,  0.045, 0.355, 1.000);
+        }
+        .ca-menu.show{
+            transform: translateY(0vh);
+            opacity: 1;
+        }
+    }
+    .master-container .ccm-block-edit .scrolleffect .ca-menu, .master-container .ccm-block-edit .scrolleffect-delay .ca-menu{
+        transform: translateY(0vh) !important;
+        opacity: 1 !important;
+    }
+}
