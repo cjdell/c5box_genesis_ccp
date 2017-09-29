@@ -1,4 +1,4 @@
-<?php  
+<?php
 namespace Concrete\Package\C5boxGenesis;
 use Concrete\Core\Package\Package;
 use Concrete\Core\Page\Theme\Theme;
@@ -12,7 +12,7 @@ use CollectionAttributeKey;
 use Concrete\Core\Attribute\Type as AttributeType;
 use Config;
 
-/* 
+/*
     GENESIS THEME BY C5BOX.COM
     COPYRIGHT 2015 C5BOX
 */
@@ -47,7 +47,7 @@ class Controller extends Package{
         $this->addSinglePages($pkg);
     }
     public function uninstall() {
-        parent::uninstall();        
+        parent::uninstall();
     }
     public function addblock($pkg){
         if(!is_object(BlockType::getByHandle('parallax_block')))
@@ -81,8 +81,8 @@ class Controller extends Package{
             PageTemplate::add('two-columns', t('Two Columns'), 'full.png', $pkg);
         }
     }
-    public function addSinglePages($pkg){}   
-    public function addPageAttr($pkg){  
+    public function addSinglePages($pkg){}
+    public function addPageAttr($pkg){
         $pagelist = CollectionAttributeKey::getByHandle('thumbnail');
         if (!$pagelist instanceof CollectionAttributeKey) {
            $pagelist = CollectionAttributeKey::add("image_file", array(
@@ -127,13 +127,13 @@ class Controller extends Package{
         }
     }
     public function on_start() {
-        $al = AssetList::getInstance(); 
-        $al->register( 'javascript', 'bootsrapjs', 'themes/genesis/js/bootstrap.min.js', array('version' => '3.3.5', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this ); 
-        $al->register( 'javascript', 'parallax', 'themes/genesis/js/parallax.min.js', array('version' => '1.4.2', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this ); 
-        $al->register( 'javascript', 'scrollmonitor', 'themes/genesis/js/scrollMonitor.js', array('version' => '1.0', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this ); 
-        $al->register( 'javascript', 'stickyjs', 'themes/genesis/js/sticky.js', array('version' => '1.2.2', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this ); 
-        $al->register( 'javascript', 'customscripts', 'themes/genesis/js/script.js', array('version' => '1.0', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this ); 
-        $al->register( 'css', 'bootstrapcss', 'themes/genesis/css/bootstrap.css', array('version' => '3.2.0', 'position' => Asset::ASSET_POSITION_HEADER, 'minify' => true, 'combine' => true), $this ); 
+        $al = AssetList::getInstance();
+        $al->register( 'javascript', 'bootsrapjs', 'themes/genesis/js/bootstrap.min.js', array('version' => '3.3.5', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this );
+        // $al->register( 'javascript', 'parallax', 'themes/genesis/js/parallax.js', array('version' => '1.4.2', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this );
+        // $al->register( 'javascript', 'scrollmonitor', 'themes/genesis/js/scrollMonitor.js', array('version' => '1.0', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this );
+        $al->register( 'javascript', 'stickyjs', 'themes/genesis/js/sticky.js', array('version' => '1.2.2', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this );
+        // $al->register( 'javascript', 'customscripts', 'themes/genesis/js/script.js', array('version' => '1.0', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this );
+        $al->register( 'css', 'bootstrapcss', 'themes/genesis/css/bootstrap.css', array('version' => '3.2.0', 'position' => Asset::ASSET_POSITION_HEADER, 'minify' => true, 'combine' => true), $this );
 
     }
 }

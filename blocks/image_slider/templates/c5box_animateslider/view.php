@@ -21,41 +21,41 @@ if ($c->isEditMode()) {
 } else {
     ?>
 <script>
-$(window).load(function(){
-    $('.slide-<?php echo $bID ?>').fractionSlider({
-        'fullWidth':            true,
-        'controls':             true, 
-        'pager':                false,
-        'responsive':           false,
-        'dimensions':           "1170,650",
-        'increase':             false,
-        'pauseOnHover':         false,
-        'slideEndAnimation':    true,
-        'startCallback': function(){
-            $(".fs_loader").hide();
-        },
-        <?php if ($timeout) { echo "timeout: $timeout,"; } ?>
-    });
+// $(window).load(function(){
+//     $('.slide-<?php echo $bID ?>').fractionSlider({
+//         'fullWidth':            true,
+//         'controls':             true,
+//         'pager':                false,
+//         'responsive':           false,
+//         'dimensions':           "1170,650",
+//         'increase':             false,
+//         'pauseOnHover':         false,
+//         'slideEndAnimation':    true,
+//         'startCallback': function(){
+//             $(".fs_loader").hide();
+//         },
+//         <?php if ($timeout) { echo "timeout: $timeout,"; } ?>
+//     });
 
-});
+// });
 </script>
 <div class="slider-wrapper ccm-block-image-slider-<?php echo $navigationTypeText?>">
 
-                   
+
 
         <?php if (count($rows) > 0) {
     ?>
         <div class="responisve-container">
-         <div class="fs_loader"><div class="rect1"></div>
+         <!-- <div class="fs_loader"><div class="rect1"></div>
   <div class="rect2"></div>
   <div class="rect3"></div>
   <div class="rect4"></div>
-  <div class="rect5"></div></div>
+  <div class="rect5"></div></div> -->
         <div class="c5box_animateslider slide-<?php echo $bID ?>">
             <?php foreach ($rows as $row) {
     ?>
                 <div class="slide">
-                 <div data-in="fade" data-delay="500" data-out="fade" class="slide_image_box" data-position="0,0">
+                 <div data-in="fade" data-delay="500" data-out="fade" class="slide_image_box fs_obj_active" data-position="0,0">
                 <?php
                 $f = File::getByID($row['fID'])
                 ?>
@@ -72,7 +72,7 @@ $(window).load(function(){
 }
     ?>
     </div>
-        <div class="slide_desc_box" data-in="fade" data-delay="1000" data-out="fade" data-position="380,0">
+        <div class="slide_desc_box fs_obj_active" data-in="fade" data-delay="1000" data-out="fade" data-position="380,0">
                     <?php if ($row['title']) {
     ?>
                         <h1><?php echo $row['title'] ?></h1>
@@ -80,7 +80,7 @@ $(window).load(function(){
 }
     ?>
                     <?php echo $row['description'] ?>
-                        
+
 
                         <?php if ($row['linkURL']) {
     ?>
@@ -90,7 +90,7 @@ $(window).load(function(){
     ?>
                     </div>
 
-                
+
                 </div>
             <?php
 }

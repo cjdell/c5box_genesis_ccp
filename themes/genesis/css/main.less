@@ -4,7 +4,7 @@
 @import "build/element.less";
 @import "build/animation.less";
 @import "build/customtemplates.less";
-@import "build/scrolleffect.less";
+// @import "build/scrolleffect.less";
 @import "build/mixins.less";
 @import "build/nav.less";
 @import "build/typography.less";
@@ -12,9 +12,9 @@
 body {
     background: @page-background-color;
     .backgroundimage, #bgvid{
-        position:fixed; 
+        position:fixed;
         z-index: -1;
-        height:100%; 
+        height:100%;
         width:100%;
     }
     .redactor_dropdown_box_styles span.alert{
@@ -64,7 +64,7 @@ body {
             }
         }
         #logo{
-            
+
             h1,h2,h3,h4,h5,p{
                 img{
                     height: auto;
@@ -143,9 +143,9 @@ body {
             text-transform: @header-site-title-type-text-transform;
         }
 
-        
+
     }
-    .navcontrol .navbar-header, 
+    .navcontrol .navbar-header,
     .navcontrol .custom-nav-class nav ul li a,
     .navcontrol .custom-nav-class ul.nav li a{
         @media @gt768{border-top: 5px solid @header-navigation-menu-background-color;}
@@ -158,15 +158,15 @@ body {
             border-top: 0px;
         }
     }
-    .navcontrol .custom-nav-class nav ul li > a:hover, 
-    .navcontrol .custom-nav-class nav ul li > a:focus, 
-    .navcontrol .custom-nav-class nav ul li:hover > a, 
-    .navcontrol .custom-nav-class nav ul li.nav-selected > a, 
+    .navcontrol .custom-nav-class nav ul li > a:hover,
+    .navcontrol .custom-nav-class nav ul li > a:focus,
+    .navcontrol .custom-nav-class nav ul li:hover > a,
+    .navcontrol .custom-nav-class nav ul li.nav-selected > a,
     .navcontrol .custom-nav-class ul.nav li.nav-path-selected > a,
-    .navcontrol .custom-nav-class ul.nav li > a:hover, 
-    .navcontrol .custom-nav-class ul.nav li > a:focus, 
-    .navcontrol .custom-nav-class ul.nav li:hover > a, 
-    .navcontrol .custom-nav-class ul.nav li.nav-selected > a, 
+    .navcontrol .custom-nav-class ul.nav li > a:hover,
+    .navcontrol .custom-nav-class ul.nav li > a:focus,
+    .navcontrol .custom-nav-class ul.nav li:hover > a,
+    .navcontrol .custom-nav-class ul.nav li.nav-selected > a,
     .navcontrol .custom-nav-class ul.nav li.nav-path-selected > a{
         @media @gt768{border-top: 5px solid;}
         @media @lt767{border-top:1px solid;}
@@ -204,7 +204,7 @@ body {
         }
         .custom-nav-class {
             @media @lt767 {
-                margin-top: 0px; 
+                margin-top: 0px;
                 border-top: 0px;
                 box-shadow: 0px 0px 0px;
             }
@@ -218,7 +218,7 @@ body {
                 @media @lt767 {
                     border-top: 0px;
                     margin-top: 0px;
-                    
+
                 }
                 li {
                     @media @lt767 {
@@ -249,7 +249,7 @@ body {
                  >li>a {
                     word-spacing: normal;
                     @media @gt768{
-                        padding: 33px 10px;    
+                        padding: 33px 10px;
                     }
                     @media @lt991{
                         padding: 33px 5px;
@@ -272,7 +272,7 @@ body {
                             width: 100%;
                         }
                         margin-bottom: 0px;
-                         
+
                         a {
                             text-align: left;
                             border-top:2px solid !important;
@@ -325,7 +325,7 @@ body {
 
 
 
-        
+
 
 
         @media @lt480{
@@ -395,7 +395,7 @@ body {
             bottom: 0;
             left: 50%;
             margin-bottom: -20px;
-            margin-left: -10px; 
+            margin-left: -10px;
         }
     }
     .contentblock {
@@ -408,7 +408,7 @@ body {
 
     }
     .parallaxarea{
-        padding: 60px 0px;
+        // padding: 60px 0px;
         margin: 0px;
         z-index: 2;
         position: relative;
@@ -440,12 +440,12 @@ body {
             text-shadow:1px 1px 1px @home-section1textshadow;
         }
         position: relative;
-        
+
 
     }
     #marqueebox{
         background: @marqueearea-background-color;
-        padding: 20px 0px 10px;
+        // padding: 20px 0px 10px;
     }
     #homesection2{
         padding: 65px 0px 65px;
@@ -455,7 +455,7 @@ body {
             text-shadow:1px 1px 1px @home-section2textshadow;
         }
         position: relative;
-        
+
 
     }
     div#footer {
@@ -467,7 +467,7 @@ body {
             margin: 0px 2px;
         }
     }
-    
+
     #footmenu{
         /* customize_footermenu-bg */background-color:@footer-bottom-background-color;/* customize_footermenu-bg */
     }
@@ -486,14 +486,14 @@ body {
             padding: 0px;
         }
     }
-    
+
     .brimicon h3 span{
         font-family: @featureheader-type-font-family;
         color: @featureheader-type-color;
         font-size: @featureheader-type-font-size;
         font-weight: @featureheader-type-font-weight;
     }
-    .brimicon div.iconc{           
+    .brimicon div.iconc{
         border: 5px solid @featureborder-color;
         border-radius: 9999px;
         color: @featureicon-color;
@@ -522,7 +522,7 @@ body {
             color:@featurecontent-color;
             span{
                 color:@featurecontent-color;
-            } 
+            }
         }
     }
 
@@ -533,3 +533,33 @@ body {
 }
 /* customize_miscellaneous */ /* customize_miscellaneous */
 @import "build/layout.less";
+
+#socialicons {
+    .ccm-block-social-links {
+        float: right;
+    }
+}
+
+.wsite-youtube-size-auto {
+    width: 100%;
+    overflow-y: hidden;
+
+    .wsite-youtube-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.5%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.ccm-toolbar-visible .master-container #header {
+    top: 48px;
+}

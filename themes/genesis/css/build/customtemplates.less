@@ -32,6 +32,9 @@
     .ccm-custom-style-container{
         float: none;
     }
+    .brimtitle {
+        margin-bottom: 8px;
+    }
     .brimtitle .page-author{
         color: @brimtitle-author-color;
     }
@@ -125,7 +128,7 @@
         @media @lt767{
             text-align: center;
         }
-       
+
         .brim-datebox {
             margin: 0px;
         }
@@ -147,7 +150,7 @@
                     // opacity: 1;
                     // transform: translateX(0vh) !important;
                 }
-                
+
             }
             &:last-child {
                 border-bottom: 0px;
@@ -291,7 +294,7 @@
         }
         ul.nav {
             border-color: @footer-autonav-border-color;
-            
+
             li {
                 border-bottom: 1px solid;
                 border-color: inherit;
@@ -333,7 +336,7 @@
                 @media @lt991 {
                     text-align: center;
                 }
-            }   
+            }
             li {
                 display: inline;
                 a {
@@ -487,7 +490,7 @@
         background: @form-wrap-color;
         border-radius: 10px;
         box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
-        
+
     }
 
     /* Form text input */
@@ -501,11 +504,11 @@
             width: 100%;
         }
         padding: 10px 10px;
-        float: left;    
+        float: left;
         font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
         border: 0;
         background: #eee;
-        border-radius: 3px 0 0 3px;      
+        border-radius: 3px 0 0 3px;
     }
 
     .fw-form-wrapper input:focus {
@@ -530,7 +533,7 @@
         color: #999;
         font-weight: normal;
         font-style: italic;
-    }    
+    }
 
     /* Form submit button */
     .fw-form-wrapper button {
@@ -551,18 +554,18 @@
         font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
         color: @button-font-color;
         background: @button-idle-color;
-        border-radius: 0 3px 3px 0;      
+        border-radius: 0 3px 3px 0;
         text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
-    }   
-      
-    .fw-form-wrapper button:hover{     
+    }
+
+    .fw-form-wrapper button:hover{
         background: @button-active-color;
-    }   
-      
+    }
+
     .fw-form-wrapper button:active,
-    .fw-form-wrapper button:focus{   
+    .fw-form-wrapper button:focus{
         background: #213022;
-        outline: 0;   
+        outline: 0;
     }
 
     .fw-form-wrapper button:before { /* left arrow */
@@ -582,12 +585,12 @@
     .fw-form-wrapper button:focus:before,
     .fw-form-wrapper button:active:before{
             border-right-color: #213022;
-    }      
+    }
 
     .fw-form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
         border: 0;
         padding: 0;
-    }  
+    }
 
     /* Animate Slider CSS */
     .c5box_animateslider{
