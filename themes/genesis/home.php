@@ -8,6 +8,13 @@ $this->inc('elements/header.php'); ?>
         $a->display($c);
     ?>
 </div>
+<div id="parallaxarea0" class="parallaxarea">
+    <?php
+        $a = new Area('Parallax Area 0');
+        $a->enableGridContainer();
+        $a->display($c);
+    ?>
+</div>
 <div id="homesection1">
     <?php
         $a = new Area('Home Section 1');
